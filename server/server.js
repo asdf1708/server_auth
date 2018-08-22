@@ -19,7 +19,7 @@ app.post('/api/user',(req,res)=>{
         res.status(200).send(doc);
     })
 })
-
+//ok
 app.post('/api/user/login',(req,res)=>{
     User.findOne({'email':req.body.email},(err,user)=>{
         if(!user) res.json({message:'Auth failed,user not found'})
